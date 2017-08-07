@@ -21,15 +21,15 @@ var articleOne = {
              <p> 
     This is my first article.this is my first article.this is my first article.this is my first article. this is my first article.
             This is my first article.this is my first article.this is my first article.
-             </p> `, 
+             </p> `
     };
     
     
     
 function createTemplete (data){
     var title = data.title;
+     var heading = data.heading;
     var date = data.data;
-    var heading = data.heading;
     var content = data.content;
             var htmlTemplete = `
            <html>
