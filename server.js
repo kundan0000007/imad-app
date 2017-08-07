@@ -77,12 +77,12 @@ function createTemplete (data){
 
 
 app.get('/', function (req, res) {
-  res.send(createTemplete(articleOne));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/Article-one',function(req,res)
 {
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplete(articleOne));
 });
 
 app.get('/Article-two',function(req,res)
