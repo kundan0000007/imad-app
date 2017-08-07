@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne= {
+var articleOne = {
     title: 'Article one | kd003',
     heading: 'Article one',
     date: 'august 7, 2017',
@@ -60,7 +60,7 @@ function createTemplete (data){
             </html>
     `;
     
-    return htmlTempelete;
+    return htmlTemplete;
     
 }
 
