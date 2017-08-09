@@ -72,7 +72,7 @@ function createTemplete (data){
            <html>
                 <head>
                     <title>
-                        ${ttle}
+                        ${title}
                     </title>
                     <meta name="viewport" content="width_device-width,initial-scale-1"/>
                     <link href="/ui/style.css" rel="stylesheet" />
