@@ -1,4 +1,4 @@
-console.log('Loaded!');
+
 var img = document.getElementBydId('madi') ;
 
 var marginLeft = 0;
@@ -23,7 +23,7 @@ button.onClick = function() {
             //take some action
             if(request.status === 200){
                 var counter = request.responseText;
-                var span = document.get.ElementById('count');
+                var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
             }
         }
