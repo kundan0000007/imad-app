@@ -17,7 +17,7 @@ button.onClick = function(){
     //create a request object 
     var request = new XMLHttpRequest();
     
-    //caoture the response and store it in a variable
+    //capture the response and store it in a variable
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE){
             //take some action
@@ -33,6 +33,4 @@ button.onClick = function(){
     //make the requesft
     reques.open('GET','http://kkumar00346.imad.hasura-app.io/',true);
     request.sent(null);
-    
-    
-}
+};
