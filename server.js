@@ -64,7 +64,7 @@ var articles = {
     
     
 function createTemplete (data){
-    var title = data.title;
+    var ttle = data.ttle;
      var heading = data.heading;
     var date = data.data;
     var content = data.content;
@@ -72,7 +72,7 @@ function createTemplete (data){
            <html>
                 <head>
                     <title>
-                        ${title}
+                        ${ttle}
                     </title>
                     <meta name="viewport" content="width_device-width,initial-scale-1"/>
                     <link href="/ui/style.css" rel="stylesheet" />
