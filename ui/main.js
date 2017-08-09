@@ -31,7 +31,7 @@ buttom.onClick = function(){
     };
     
     //make the requesft
-    reques.open('GET',"http://kkumar00346.imad.hasura-app.io/",true);
+    reques.open('GET','http://kkumar00346.imad.hasura-app.io/',true);
     request.sent(null);
     
     
