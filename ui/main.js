@@ -11,9 +11,9 @@ img.onclick = function(){
 };
 
 //counter code
-var button = document.getElementById("counter");
+var button = document.getElementById('counter');
 
-buttom.onClick = function(){
+button.onClick = function(){
     //create a request object 
     var request = new XMLHttpRequest();
     
@@ -23,7 +23,7 @@ buttom.onClick = function(){
             //take some action
             if(request.status === 200){
                 var counter = request.responseText;
-                var span = document.get.ElementById("count");
+                var span = document.get.ElementById('count');
                 span.innerHTML = counter.toString();
             }
         }
