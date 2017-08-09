@@ -30,7 +30,7 @@ button.onClick = function() {
         //not done yet
     };
     
-    //make the requesft
+    //make the request
     request.open('GET','http://kkumar00346.imad.hasura-app.io/counter',true);
     request.send(null);
 };
