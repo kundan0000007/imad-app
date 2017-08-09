@@ -2,7 +2,7 @@
 window.onload = function(){
     document.getElementById("subm").onclick=function(){
         alert("Hello WOrld");
-    }
+    };
 var img = document.getElementById('madi') ;
 
 var marginLeft = 0;
