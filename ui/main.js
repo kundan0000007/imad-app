@@ -18,7 +18,7 @@ button.onClick = function() {
     var request = new XMLHttpRequest();
     
     //capture the response and store it in a variable
-    request.onreadyStateChange = function () {
+    request.onreadystatechange = function () {
         if(request.readyState === XMLHttpRequest.DONE){
             //take some action
             if(request.status === 200){
@@ -31,6 +31,6 @@ button.onClick = function() {
     };
     
     //make the requesft
-    request.open("GET","http://kkumar00346.imad.hasura-app.io/counter",true);
+    request.open('GET','http://kkumar00346.imad.hasura-app.io/counter',true);
     request.send(null);
 };
