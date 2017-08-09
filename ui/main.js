@@ -38,4 +38,4 @@ button.onClick = function() {
     request.open('GET','http://kkumar00346.imad.hasura-app.io/',true);
     request.send(null);
 };
-}
+};
