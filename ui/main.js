@@ -1,15 +1,19 @@
- var img = document.getElementById('madi') ;
-    
-    var marginLeft = 0;
-    function moveRight(){
-        marginLeft = marginLeft = 10;
-        img.stylemarginLeft = marginLeft = 'px';
-    }
-            img.onClick = function(){
-            var interval = setInterval(moveRight, 100);
-        };
 
-   
+window.onload = function(){
+    document.getElementById("subm").onclick=function(){
+        alert("Hello WOrld");
+    };
+var img = document.getElementById('madi') ;
+
+var marginLeft = 0;
+function moveRight(){
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft = 'px';
+}
+img.onClick = function(){
+    var interval = setInterval(moveRight, 100);
+};
+
 //counter code
 var button = document.getElementById('counter');
 
@@ -30,7 +34,9 @@ button.onClick = function() {
         //not done yet
     };
     
-    //make the request
-    request.open('GET','http://kkumar00346.imad.hasura-app.io/counter',true);
+    //make the requesft
+    request.open('GET','http://kkumar00346.imad.hasura-app.io/',true);
     request.send(null);
 };
+}
+;
