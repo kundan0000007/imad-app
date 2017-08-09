@@ -5,7 +5,101 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var articles = {
+        'article-one': {
+            title: 'Article one | kd003',
+            heading: 'Article one',
+            date: 'august 7, 2017',
+            content: `
+                    <p> 
+            This is my first article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my first article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my first article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> `
+            },
+        'article-two': {
+            title: 'Article two | kd003',
+            heading: 'Article two',
+            date: 'august 7, 2017',
+            content: `
+                    <p> 
+            This is my two article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my two article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my two article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> `
+        },
+        'article-three': {
+            title: 'Article three | kd003',
+            heading: 'Article three',
+            date: 'august 7, 2017',
+            content: `
+                    <p> 
+            This is my third article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my third article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> 
+                     <p> 
+            This is my third article.this is my first article.this is my first article.this is my first article. this is my first article.
+                    This is my first article.this is my first article.this is my first article.
+                     </p> `
+        }
+};
+    
+    
+function createTemplete (data){
+    var title = data.title;
+     var heading = data.heading;
+    var date = data.data;
+    var content = data.content;
+            var htmlTemplete = `
+           <html>
+                <head>
+                    <title>
+                        ${title}
+                    </title>
+                    <meta name="viewport" content="width_device-width,initial-scale-1"/>
+                    <link href="/ui/style.css" rel="stylesheet" />
+                </head>
+            <body >
+                <div class="container">
+                    <div>
+                        <a href="/">Home</a>
+                    </div>
+                <hr/>
+            <h3>
+                ${heading}
+            </h3>
+            <div>
+                ${date}
+            </div>
+            <div>
+                ${content}
+            </div>
+            </div>
+            </body>
+            </html>
+    `;
+    
+    return htmlTemplete;
+    
+}
 
 
 app.get('/', function (req, res) {
