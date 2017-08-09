@@ -66,7 +66,7 @@ var articles = {
 function createTemplete (data){
     var title = data.title;
      var heading = data.heading;
-    var date = data.data;
+    var date = data.date;
     var content = data.content;
             var htmlTemplete = `
            <html>
