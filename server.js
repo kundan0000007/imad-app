@@ -135,3 +135,18 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
+
+var names = [];
+app.get('/submit-names/:names',function(req,res) {
+    //get the name from the request
+    var name = req.params.name;//1000
+    
+    names.push(name);
+    //json:javascript object notation
+    res.send(JSON.stringfy(names));
+    
+});
+
+
+
