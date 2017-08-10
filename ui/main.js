@@ -1,5 +1,4 @@
 
-window.onload = function(){
     document.getElementById("subm").onclick=function(){
         alert("Hello WOrld");
     };
@@ -12,7 +11,6 @@ function moveRight(){
 }
 img.onClick = function(){
     var interval = setInterval(moveRight, 100);
-};
 
 //counter code
 var button = document.getElementById('counter');
@@ -23,7 +21,7 @@ button.onClick = function() {
     
     //capture the response and store it in a variable
     request.onreadystatechange = function () {
-        if(request.readyState === XMLHttpRequest.DONE){
+        if(request.readyState === DONE){
             //take some action
             if(request.status === 200){
                 var counter = request.responseText;
