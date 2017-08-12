@@ -141,7 +141,7 @@ app.get('/submit-names/:name',function(req,res) {
     
     names.push(name);
     //json:javascript object notation
-    res.send(JSON.stringkfy(names));
+    res.send(JSON.stringify(names));
     
 });
 
