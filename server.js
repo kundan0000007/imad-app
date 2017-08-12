@@ -135,7 +135,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-names/:name', function(req,res) {
+app.get('/submit-names', function(req,res) {
     //get the name from the request
     var name = req.query.name;//1000
     
